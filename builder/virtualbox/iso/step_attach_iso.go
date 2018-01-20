@@ -3,8 +3,8 @@ package iso
 import (
 	"fmt"
 	vboxcommon "github.com/hashicorp/packer/builder/virtualbox/common"
+	"github.com/hashicorp/packer/helper/multistep"
 	"github.com/hashicorp/packer/packer"
-	"github.com/mitchellh/multistep"
 )
 
 // This step attaches the ISO to the virtual machine.

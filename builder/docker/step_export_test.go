@@ -3,7 +3,7 @@ package docker
 import (
 	"bytes"
 	"errors"
-	"github.com/mitchellh/multistep"
+	"github.com/hashicorp/packer/helper/multistep"
 	"io/ioutil"
 	"os"
 	"testing"
