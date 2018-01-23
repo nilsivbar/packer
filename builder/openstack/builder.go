@@ -93,6 +93,8 @@ func (b *Builder) Run(ui packer.Ui, hook packer.Hook, cache packer.Cache) (packe
 			UserDataFile:     b.config.UserDataFile,
 			ConfigDrive:      b.config.ConfigDrive,
 			InstanceMetadata: b.config.InstanceMetadata,
+			VolumeSize:       b.config.VolumeSize,
+			ImageUUID:        b.config.ImageUUID,
 		},
 		&StepGetPassword{
 			Debug: b.config.PackerDebug,

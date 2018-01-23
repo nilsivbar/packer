@@ -31,6 +31,8 @@ type RunConfig struct {
 	UserData         string            `mapstructure:"user_data"`
 	UserDataFile     string            `mapstructure:"user_data_file"`
 	InstanceMetadata map[string]string `mapstructure:"instance_metadata"`
+	ImageUUID        string            `mapstructure:"image_uuid"`
+	VolumeSize       int               `mapstructure:"volume_size"`
 
 	ConfigDrive bool `mapstructure:"config_drive"`
 
